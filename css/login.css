@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#1f2544, #474f7a, #81689d, #ffd0ec);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f2544;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #ffd0ec;
+}
+
+.center {
+  background-color: transparent;
+  min-width: 600px;
+  height: 50vh;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.center .txt_field {
+  text-align: left;
+}
+
+.center h1 {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 35px;
+  color: aliceblue;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1rem 0.1rem 1rem #81689d;
+}
+
+.center form {
+  width: 70%;
+margin: 0 auto;
+  padding-right: 25px;
+}
+
+form .txt_field {
+  position: relative;
+  margin: 20px 0;
+}
+
+.txt_field input {
+  width: 90%;
+  height: 35px;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+
+.txt_field input::placeholder {
+  letter-spacing: 0.1rem;
+}
+
+.txt_field input:focus {
+  outline: 1px solid #1f2544;
+  box-shadow: inset 1rem 1rem 1rem #ddd;
+}
+
+.txt_field i {
+  position: absolute;
+  top: 1.2rem;
+  left: 13px;
+}
+
+.password {
+  display: flex;
+  justify-content: space-around;
+  color: #1f2544;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.password input {
+  transform: scale(1.4);
+}
+
+.login {
+  width: 90%;
+  margin-right: auto;
+  padding: 0.9rem 0.7rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: #1f2544;
+  color: #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.login:hover {
+  transform: scale(0.98);
+  background-color: #474f7a;
+  color: #1f2544;
+}
+
+.not_member {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.not_member span {
+  margin-right: 0.6rem;
+}
