@@ -1,3 +1,4 @@
-## Login ekranı stillendirme
+## Login - Signup ekranı stillendirme
 ### Ödev 1
-![login ekranı](./loginScreen.png)
+![login ekranı](./login.png)
+![signup ekranı](./signup.png)

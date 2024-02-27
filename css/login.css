@@ -6,7 +6,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#1f2544, #474f7a, #81689d, #ffd0ec);
+  background-color: #119278;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -19,13 +19,17 @@ a {
 }
 
 a:hover {
-  color: #ffd0ec;
+  color: #81689d;
+}
+
+input:focus {
+  outline-color: #474f7a;
 }
 
 .center {
-  background-color: transparent;
+  background-color: #fff;
   min-width: 600px;
-  height: 50vh;
+  height: 55vh;
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
@@ -37,16 +41,16 @@ a:hover {
 
 .center h1 {
   text-align: center;
-  padding: 5px 0;
+  padding: 30px 0;
   font-size: 35px;
-  color: aliceblue;
+  color: #1f2544;
   letter-spacing: 0.2rem;
   text-shadow: 0.1rem 0.1rem 1rem #81689d;
 }
 
 .center form {
   width: 70%;
-margin: 0 auto;
+  margin: 0 auto;
   padding-right: 25px;
 }
 
@@ -68,13 +72,13 @@ form .txt_field {
   margin: 0 auto;
 }
 
-.txt_field input::placeholder {
+input::placeholder {
   letter-spacing: 0.1rem;
 }
 
-.txt_field input:focus {
+input:focus {
   outline: 1px solid #1f2544;
-  box-shadow: inset 1rem 1rem 1rem #ddd;
+  box-shadow: inset 0.1rem 0.1rem 1rem #ddd;
 }
 
 .txt_field i {
@@ -95,7 +99,7 @@ form .txt_field {
   transform: scale(1.4);
 }
 
-.login {
+button {
   width: 90%;
   margin-right: auto;
   padding: 0.9rem 0.7rem;
@@ -109,7 +113,7 @@ form .txt_field {
   transition: all 0.3s ease-in-out;
 }
 
-.login:hover {
+button:hover {
   transform: scale(0.98);
   background-color: #474f7a;
   color: #1f2544;
@@ -123,4 +127,42 @@ form .txt_field {
 
 .not_member span {
   margin-right: 0.6rem;
+}
+
+/* REGISTRATION */
+#registration {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#registration > input {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-footer input {
+  font-size: 1.5rem;
+  scale: 1.2;
+  margin-right: 0.5rem;
+}
+
+.signup {
+  width: 100%;
+  display: block;
 }
